@@ -1,5 +1,5 @@
 # Vanshika Gupta Portfolio
-Personal portfolio for Vanshika Gupta — Cloud & IT Support focused.
+Personal portfolio for Vanshika Gupta 
 
 ## GitHub Pages
 Repository: `vanshika-clouddev.github.io`

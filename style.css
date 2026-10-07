@@ -144,11 +144,50 @@ h1 span{
 .section-kicker{color:#28a4ff;font-size:13px;letter-spacing:2px;font-weight:700;margin-bottom:12px}
 .content-section h2{font-size:38px;margin-bottom:18px}
 .content-section p{color:var(--muted);font-size:18px;line-height:1.7}
-.chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.chips span{padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(5,23,43,.7)}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:25px}
-.cards article{padding:25px;border:1px solid var(--line);border-radius:16px;background:rgba(5,20,37,.62)}
-.cards h3{margin-bottom:10px;font-size:21px}
+.skills-section{text-align:center}
+.skills-section .section-kicker{margin-bottom:10px}
+.skills-section h2{font-size:44px;margin-bottom:42px;letter-spacing:-1px}
+.skills-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;text-align:left}
+.skill-card{
+  position:relative;
+  min-height:220px;
+  padding:28px;
+  border:1px solid rgba(45,157,255,.24);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(8,29,52,.92),rgba(4,18,34,.88));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025),0 16px 45px rgba(0,0,0,.18);
+  overflow:hidden;
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.skill-card:before{
+  content:"";position:absolute;left:0;top:0;width:100%;height:2px;
+  background:linear-gradient(90deg,transparent,#199cff,transparent);opacity:.65;
+}
+.skill-card:hover{transform:translateY(-4px);border-color:rgba(25,156,255,.55);box-shadow:0 18px 50px rgba(0,120,255,.13)}
+.skill-icon{
+  width:46px;height:46px;display:grid;place-items:center;margin-bottom:20px;
+  border:1px solid rgba(25,156,255,.28);border-radius:12px;
+  background:rgba(25,156,255,.08);color:#48b0ff;font-size:22px;font-weight:700;
+}
+.skill-card h3{font-size:22px;margin-bottom:17px;color:#f5f8ff}
+.skill-tags{display:flex;flex-wrap:wrap;gap:9px}
+.skill-tags span{
+  padding:8px 12px;border:1px solid rgba(150,190,230,.14);
+  border-radius:9px;background:rgba(2,13,27,.52);
+  color:#cbd8e8;font-size:14px;line-height:1.2;
+}
+.project-list{display:grid;grid-template-columns:1fr;gap:24px;margin-top:30px}
+.project-card{position:relative;padding:34px 36px 32px;border:1px solid rgba(45,157,255,.30);border-radius:18px;background:linear-gradient(145deg,rgba(8,29,52,.92),rgba(4,18,34,.88));box-shadow:inset 0 1px 0 rgba(255,255,255,.025),0 16px 45px rgba(0,0,0,.18);overflow:hidden;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.project-card:before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,#199cff,transparent);opacity:.75}
+.project-card:hover{transform:translateY(-4px);border-color:rgba(25,156,255,.58);box-shadow:0 18px 50px rgba(0,120,255,.13)}
+.project-card h3{font-size:28px;line-height:1.25;margin-bottom:18px;color:#f5f8ff}
+.project-tech{color:#65b9ff !important;font-size:15px !important;line-height:1.7 !important;margin-bottom:17px}
+.project-tech strong{color:#dfeeff}
+.project-description{max-width:980px;color:#c5cfdd !important;font-size:16px !important;line-height:1.75 !important;margin-bottom:25px}
+.repo-btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 19px;border:1px solid #199cff;border-radius:10px;background:rgba(25,156,255,.08);color:#f5f8ff;text-decoration:none;font-size:15px;font-weight:600;transition:.25s ease}
+.repo-btn:hover{background:#199cff;box-shadow:0 10px 28px rgba(25,156,255,.20);transform:translateY(-2px)}
+.github-mark{font-size:14px;color:#65b9ff}
+.repo-btn:hover .github-mark{color:#fff}
 a{color:#54b4ff}
 
 @media(max-width:980px){
@@ -169,5 +208,99 @@ a{color:#54b4ff}
   .hero h2{font-size:23px}
   .intro{font-size:16px}
   .hero-visual{height:330px}
-  .cards{grid-template-columns:1fr}
+  .skills-section h2{font-size:36px;margin-bottom:30px}
+  .skills-grid{grid-template-columns:1fr;gap:18px}
+  .skill-card{min-height:auto}
+  .project-card{padding:27px 22px 25px}
+  .project-card h3{font-size:23px}
+  .project-description{font-size:15px !important}
+}
+
+/* Experience */
+.experience-section h2{margin-bottom:30px}
+.experience-card{
+  position:relative;
+  padding:34px 36px 32px;
+  border:1px solid rgba(45,157,255,.30);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(8,29,52,.92),rgba(4,18,34,.88));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025),0 16px 45px rgba(0,0,0,.18);
+  overflow:hidden;
+}
+.experience-card:before{
+  content:"";position:absolute;left:0;right:0;top:0;height:2px;
+  background:linear-gradient(90deg,transparent,#199cff,transparent);opacity:.75;
+}
+.experience-heading{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:25px;
+  padding-bottom:24px;border-bottom:1px solid rgba(150,190,230,.12);
+}
+.experience-heading h3{font-size:26px;margin-bottom:8px}
+.experience-meta{font-size:15px !important;color:#65b9ff !important}
+.experience-label{
+  flex:0 0 auto;padding:9px 13px;border:1px solid rgba(25,156,255,.30);
+  border-radius:9px;background:rgba(25,156,255,.08);color:#8acbff;
+  font-size:13px;font-weight:700;
+}
+.experience-points{margin:25px 0 0;padding-left:20px;display:grid;gap:14px}
+.experience-points li{color:#c5cfdd;font-size:16px;line-height:1.7;padding-left:5px}
+.experience-points li::marker{color:#38aaff}
+
+/* Contact */
+.contact-section{text-align:center;padding-bottom:125px}
+.contact-section h2{font-size:44px;margin-bottom:14px}
+.contact-intro{max-width:760px;margin:0 auto 34px;color:#c5cfdd !important}
+.contact-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;text-align:left}
+.contact-link{
+  display:flex;align-items:center;gap:15px;min-height:84px;padding:17px;
+  border:1px solid rgba(45,157,255,.24);border-radius:14px;
+  background:linear-gradient(145deg,rgba(8,29,52,.88),rgba(4,18,34,.84));
+  color:#fff;text-decoration:none;transition:.25s ease;
+}
+.contact-link:hover{transform:translateY(-3px);border-color:rgba(25,156,255,.58);box-shadow:0 15px 38px rgba(0,120,255,.12)}
+.contact-icon{
+  width:45px;height:45px;flex:0 0 45px;display:grid;place-items:center;
+  border:1px solid rgba(25,156,255,.28);border-radius:11px;
+  background:rgba(25,156,255,.08);color:#54b4ff;font-size:16px;font-weight:800;
+}
+.contact-link small{display:block;color:#7fbff0;font-size:12px;letter-spacing:.5px;margin-bottom:5px}
+.contact-link strong{display:block;color:#f5f8ff;font-size:14px;font-weight:600;line-height:1.35}
+
+@media(max-width:760px){
+  .experience-card{padding:27px 22px 25px}
+  .experience-heading{flex-direction:column;gap:14px}
+  .experience-heading h3{font-size:23px}
+  .contact-links{grid-template-columns:1fr}
+  .contact-section h2{font-size:36px}
+}
+
+/* Certifications */
+.certifications-section h2{text-align:center;font-size:44px;margin-bottom:42px;letter-spacing:-1px}
+.certifications-section .section-kicker{text-align:center}
+.cert-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.cert-card{
+  display:flex;align-items:flex-start;gap:17px;min-height:150px;padding:25px;
+  border:1px solid rgba(45,157,255,.26);border-radius:17px;
+  background:linear-gradient(145deg,rgba(8,29,52,.92),rgba(4,18,34,.88));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025),0 16px 45px rgba(0,0,0,.16);
+  position:relative;overflow:hidden;transition:.25s ease;
+}
+.cert-card:before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,#199cff,transparent);opacity:.7}
+.cert-card:hover{transform:translateY(-4px);border-color:rgba(25,156,255,.55);box-shadow:0 18px 50px rgba(0,120,255,.13)}
+.cert-icon{
+  width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;
+  border:1px solid rgba(25,156,255,.28);border-radius:12px;
+  background:rgba(25,156,255,.08);color:#54b4ff;font-size:20px;font-weight:800;
+}
+.cert-card h3{font-size:19px;line-height:1.35;margin:1px 0 7px;color:#f5f8ff}
+.cert-card p{font-size:14px !important;line-height:1.4 !important;color:#65b9ff !important;margin-bottom:4px}
+.cert-card span{display:block;color:#aebed1;font-size:13px;line-height:1.5}
+
+@media(max-width:980px){
+  nav{gap:14px}
+  nav a{font-size:13px}
+}
+@media(max-width:760px){
+  .cert-grid{grid-template-columns:1fr;gap:16px}
+  .certifications-section h2{font-size:36px;margin-bottom:30px}
 }

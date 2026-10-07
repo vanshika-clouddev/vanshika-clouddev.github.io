@@ -17,6 +17,7 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -68,40 +69,231 @@
       </div>
     </section>
 
-    <section id="about" class="content-section">
+    <section id="about" class="content-section about-section">
       <p class="section-kicker">ABOUT</p>
-      <h2>Cloud-focused and hands-on.</h2>
-      <p>Recent BCA (Cloud &amp; Cyber Security) graduate with practical exposure to AWS, Azure, GCP, Linux administration, cloud deployment, monitoring and infrastructure support.</p>
+      <h2>A little about me.</h2>
+      <p>I’m a Cloud &amp; Cyber Security graduate with a practical interest in cloud infrastructure, Linux, and monitoring. Through my internship and projects, I’ve worked with AWS, Azure, cloud deployments, and server environments. I genuinely enjoy exploring new technologies. If there is something new to learn based on a project or work requirement, I’m always ready to learn and adapt.</p>
     </section>
 
-    <section id="skills" class="content-section">
+    <section id="skills" class="content-section skills-section">
       <p class="section-kicker">SKILLS</p>
-      <h2>Cloud, Linux &amp; Monitoring</h2>
-      <div class="chips">
-        <span>AWS</span><span>Azure</span><span>GCP</span><span>Linux / RHEL</span>
-        <span>Networking</span><span>Zabbix</span><span>Grafana</span><span>Git / GitHub</span>
+      <h2>Technical Skills</h2>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-icon">☁</div>
+          <h3>Cloud Platforms</h3>
+          <div class="skill-tags">
+            <span>AWS</span>
+            <span>Microsoft Azure</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">▣</div>
+          <h3>Operating Systems</h3>
+          <div class="skill-tags">
+            <span>Red Hat Linux (RHEL)</span>
+            <span>Kali Linux</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">⌁</div>
+          <h3>Networking</h3>
+          <div class="skill-tags">
+            <span>TCP/IP</span>
+            <span>DNS</span>
+            <span>HTTP/HTTPS</span>
+            <span>VPN</span>
+            <span>IP Addressing</span>
+            <span>Subnetting</span>
+            <span>VPC / VNet</span>
+            <span>Security Groups</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">◉</div>
+          <h3>Monitoring &amp; Tools</h3>
+          <div class="skill-tags">
+            <span>Zabbix</span>
+            <span>Grafana</span>
+            <span>Git / GitHub</span>
+            <span>MySQL</span>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="projects" class="content-section">
+    <section id="projects" class="content-section projects-section">
       <p class="section-kicker">PROJECTS</p>
       <h2>Featured work</h2>
-      <div class="cards">
-        <article><h3>Cloud-Based Intelligent Ticketing System</h3><p>AWS-based ticket management workflow with cloud deployment, database and notification components.</p></article>
-        <article><h3>Multi-Region Cloud Failover Architecture</h3><p>A case study focused on availability, disaster recovery, Route 53, load balancing and fault tolerance.</p></article>
+
+      <div class="project-list">
+        <article class="project-card">
+          <h3>Cloud-Based Intelligent Ticketing System</h3>
+          <p class="project-tech"><strong>Technologies:</strong> Python · Streamlit · AWS EC2 · RDS · SNS · MySQL</p>
+          <p class="project-description">A cloud-based ticket management system built to organize IT support and incident workflows. It allows tickets to be created and managed, priorities to be handled, and support activity to be viewed through a simple dashboard, with AWS services used for deployment, database management, and automated notifications.</p>
+          <a class="repo-btn" href="https://github.com/vanshika-clouddev/Cloud-based-intelligent-ticketing-system" target="_blank" rel="noopener">
+            <span class="github-mark" aria-hidden="true">&lt;/&gt;</span>
+            GitHub Repository
+            <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h3>Multi-Region Cloud Failover Architecture</h3>
+          <p class="project-tech"><strong>Technologies:</strong> AWS · Route 53 · Load Balancer · Disaster Recovery Concepts</p>
+          <p class="project-description">A cloud architecture case study designed to demonstrate high availability and failover across multiple regions. The project focuses on disaster recovery, fault tolerance, and business continuity by routing traffic toward an available environment when the primary region becomes unavailable.</p>
+          <a class="repo-btn" href="https://github.com/vanshika-clouddev/global-cloud-failover-architecture" target="_blank" rel="noopener">
+            <span class="github-mark" aria-hidden="true">&lt;/&gt;</span>
+            GitHub Repository
+            <span aria-hidden="true">↗</span>
+          </a>
+        </article>
       </div>
     </section>
 
-    <section id="experience" class="content-section">
+    <section id="experience" class="content-section experience-section">
       <p class="section-kicker">EXPERIENCE</p>
       <h2>Cloud Support Intern</h2>
-      <p>Digitalearn Solution Pvt Ltd · April 2026 – July 2026</p>
+      <div class="experience-card">
+        <div class="experience-heading">
+          <div>
+            <h3>Digitalearn Solution Pvt Ltd</h3>
+            <p class="experience-meta">April 2026 – July 2026 · Project-Based Internship</p>
+          </div>
+          <span class="experience-label">Cloud Support</span>
+        </div>
+
+        <ul class="experience-points">
+          <li>Worked in a project-based internship where cloud support and deployment projects were assigned and completed as practical deliverables.</li>
+          <li>Worked on AWS and GCP deployment tasks, including hosting a PHP “Hello World” website on a GCP VM and connecting to the server through SSH.</li>
+          <li>Hosted a Linux-based website on AWS and troubleshot access and connectivity issues by checking the instance, public IP, security group rules, and required services.</li>
+          <li>Gained practical experience with basic cloud infrastructure support, server management, troubleshooting, and monitoring while working on assigned projects.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="contact" class="content-section">
+    <section id="certifications" class="content-section certifications-section">
+      <p class="section-kicker">CERTIFICATIONS</p>
+      <h2>Certifications &amp; Training</h2>
+
+      <div class="cert-grid">
+        <article class="cert-card">
+          <div class="cert-icon">☁</div>
+          <div>
+            <h3>Amazon Web Services (AWS)</h3>
+            <p>Training &amp; Certification</p>
+            <span>E&amp;ICT Academy (IIT Kanpur)</span>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">☁</div>
+          <div>
+            <h3>Advanced Cloud (Azure)</h3>
+            <p>Training &amp; Certification</p>
+            <span>E&amp;ICT Academy (IIT Kanpur)</span>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">A</div>
+          <div>
+            <h3>Microsoft Azure AZ-900</h3>
+            <p>Certification</p>
+            <span>Microsoft</span>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">☁</div>
+          <div>
+            <h3>Introduction to Cloud Computing</h3>
+            <p>NPTEL</p>
+            <span>IIT Kharagpur</span>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">◈</div>
+          <div>
+            <h3>Cloud Security</h3>
+            <p>Training &amp; Certification</p>
+            <span>E&amp;ICT Academy (IIT Kanpur)</span>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">▣</div>
+          <div>
+            <h3>Linux Administration</h3>
+            <p>Training &amp; Certification</p>
+            <span>E&amp;ICT Academy (IIT Kanpur)</span>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">⌁</div>
+          <div>
+            <h3>Certified Ethical Hacking v13</h3>
+            <p>Training &amp; Certification</p>
+            <span>E&amp;ICT Academy (IIT Kanpur)</span>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">⌁</div>
+          <div>
+            <h3>Computer Hacking Forensics Investigator</h3>
+            <p>Training &amp; Certification</p>
+            <span>E&amp;ICT Academy (IIT Kanpur)</span>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">◌</div>
+          <div>
+            <h3>Introduction to Internet of Things</h3>
+            <p>NPTEL</p>
+            <span>IIT Kharagpur</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
       <p class="section-kicker">CONTACT</p>
       <h2>Let’s connect.</h2>
-      <p><a href="mailto:vgupta9388@gmail.com">vgupta9388@gmail.com</a></p>
+      <p class="contact-intro">Feel free to reach out if you have an opportunity, a project to discuss, or simply want to connect. I’m open to learning new technologies and exploring opportunities in cloud and IT support.</p>
+
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:vgupta9388@gmail.com">
+          <span class="contact-icon" aria-hidden="true">✉</span>
+          <span>
+            <small>Email</small>
+            <strong>vgupta9388@gmail.com</strong>
+          </span>
+        </a>
+
+        <a class="contact-link" href="https://www.linkedin.com/in/vanshika0604" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">in</span>
+          <span>
+            <small>LinkedIn</small>
+            <strong>Let’s connect on LinkedIn</strong>
+          </span>
+        </a>
+
+        <a class="contact-link" href="https://github.com/vanshika-clouddev" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">&lt;/&gt;</span>
+          <span>
+            <small>GitHub</small>
+            <strong>View my GitHub profile</strong>
+          </span>
+        </a>
+      </div>
     </section>
   </main>
 
